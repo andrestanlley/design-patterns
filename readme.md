@@ -33,7 +33,11 @@ Padrões de projetos são soluções já válidadas para resolver determinado pr
 - Neste padrão devemos substituir as chamadas diretas (new) para um método intermediario que fará o papel de fábrica, este método irá controlar como os objetos que estendem a classe serão instanciados.
 Ex: a classe Veiculo implementa a interface Transporte, e as subclasses concretas carros, motos e bicicletas que herdam de Veiculo e implementam os metodos da interface.
 
+### Abstract Factory
+- Devemos declarar explicitamente interfaces para cada produto distinto da família de produtos (ex: veículos e aeronaves). Todas as variantes dos produtos devem serguir essas interfaces. Declaramos então a fábrica abstrata, uma interface com metodos de criação para todos os produtos que fazem parte da família de produtos (ex: criarTransporteVeiculo, criarTransporteAeronave), estes devem retornar tipos abstratos de produtos representados pelas interfaces.
 
+### Builder
+- No builder iremos quebrar o processo de criação do objeto em etapas e em vários métodos, esses componentes serão chamados builders, que são os itens para construir o objeto. Esta sequencia será guiada por um diretor que recebe quais os métodos ele precisa e dispara a sequência para os builders.
 ## Estrutural
 `Definem como trabalhar com objetos e classes em estruturas maiores e complexas, e ainda assim flexíveis e eficientes.`
 
