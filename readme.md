@@ -41,5 +41,8 @@ Ex: a classe Veiculo implementa a interface Transporte, e as subclasses concreta
 ## Estrutural
 `Definem como trabalhar com objetos e classes em estruturas maiores e complexas, e ainda assim flexíveis e eficientes.`
 
+### Adapter
+- Podemos utilizar o adapter para converter a interface de um objeto de maneira que outro objeto possa compreender as informações, ele encobre um dos objetos para esconder as regras de négocio e qualquer dificuldade da conversão, permite que classes com interfaces incompatíveis trabalhem juntas.
+
 ## Comportamental
 `Trabalham com a comunicação eficiente e designam as responsabilidades comuns aos objetos.`
